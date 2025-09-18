@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  direction: rtl;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  direction: rtl;
+}
+
+.ant-layout {
+  direction: rtl;
+}
+
+.ant-menu {
+  direction: rtl;
+}
+
+.ant-table {
+  direction: rtl;
+}
+
+.ant-form {
+  direction: rtl;
+}
+
+.ant-btn {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+.ant-input {
+  font-family: "Vazirmatn", sans-serif;
+  text-align: right;
+}
+
+.ant-select {
+  direction: rtl;
+}
+
+.ant-select-selection-item {
+  text-align: right;
+}
+
+.ant-card {
+  direction: rtl;
+}
+
+.ant-card-head-title {
+  text-align: right;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-primary {
+  @apply bg-slate-700 hover:bg-slate-800 text-white px-6 py-2 rounded-md transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-white hover:bg-gray-50 text-slate-700 border border-slate-300 px-6 py-2 rounded-md transition-colors duration-200;
+}
+
+.input-field {
+  @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.table-header {
+  @apply bg-gray-50 text-gray-700 font-medium text-sm;
+}
+
+.table-cell {
+  @apply px-4 py-3 text-sm text-gray-900 border-b border-gray-200;
+}
+
+.status-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+}
+
+.status-open {
+  @apply bg-green-100 text-green-800;
+}
+
+.status-closed {
+  @apply bg-red-100 text-red-800;
+}
+
+.status-pending {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.status-assigned {
+  @apply bg-blue-100 text-blue-800;
+}
