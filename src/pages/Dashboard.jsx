@@ -15,35 +15,35 @@ const Dashboard = () => {
       value: "8",
       description:
         "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
-      icon: <UserAddOutlined style={{ fontSize: "48px", color: "#1d4ed8" }} />,
-    },
-    {
-      title: "تمامی تیکت‌ها",
-      value: "8",
-      description:
-        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
-      icon: <CarryOutOutlined style={{ fontSize: "48px", color: "#1d4ed8" }} />,
+      icon: <UserAddOutlined style={{ fontSize: "48px", color: "#2d4e71" }} />,
     },
     {
       title: "مدیریت کاربران",
       value: "8",
       description:
         "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
-      icon: <TeamOutlined style={{ fontSize: "48px", color: "#1d4ed8" }} />,
+      icon: <TeamOutlined style={{ fontSize: "48px", color: "#2d4e71" }} />,
+    },
+    {
+      title: "تمامی تیکت‌ها",
+      value: "8",
+      description:
+        "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+      icon: <CarryOutOutlined style={{ fontSize: "48px", color: "#2d4e71" }} />,
     },
     {
       title: "مشتریان",
       value: "8",
       description:
         "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
-      icon: <UserOutlined style={{ fontSize: "48px", color: "#1d4ed8" }} />,
+      icon: <UserOutlined style={{ fontSize: "48px", color: "#2d4e71" }} />,
     },
   ];
 
   return (
     <Space direction="vertical" size="large" className="w-full">
-      <div className="text-center text-white">
-        <Title level={1} className="text-white mb-2">
+      <div className="dashboard-header text-white">
+        <Title level={1} style={{ color: "#fff" }} className="pb-2">
           بخش سوپر ادمین
         </Title>
         <Paragraph className="text-lg text-white opacity-90">
@@ -51,18 +51,15 @@ const Dashboard = () => {
         </Paragraph>
       </div>
 
-      <Row gutter={[24, 24]}>
+      <Row gutter={[5, 0]}>
         {stats.map((stat, index) => (
-          <Col xs={24} sm={12} lg={6} key={index}>
-            <Card
-              className="text-center hover:shadow-lg transition-shadow"
-              bodyStyle={{ padding: "24px" }}
-            >
+          <Col xs={24} sm={24} md={12} lg={12} xl={6} key={index}>
+            <Card className="text-center dashboard-card hover:card-shadow transition-shadow">
               <Space direction="vertical" size="middle" className="w-full">
                 <div className="flex justify-center">{stat.icon}</div>
-                <Title level={2} className="text-gray-900 mb-0">
+                {/* <Title level={2} className="text-gray-900 mb-0">
                   {stat.value}
-                </Title>
+                </Title> */}
                 <Title level={4} className="text-gray-900 mb-0">
                   {stat.title}
                 </Title>

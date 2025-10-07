@@ -44,42 +44,40 @@ const Layout = ({ children }) => {
 
   return (
     <AntLayout className="min-h-screen">
-      <Header className="bg-slate-800 px-6 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <Avatar className="bg-orange-600" size="large">
+      <Header className="main-header px-6 flex items-center justify-between">
+        <div className="flex items-center gap-8">
+          <Avatar className="bg-orange-600" shape="square">
             A
           </Avatar>
-          <Button type="primary" icon={<PlusOutlined />} />
-          <Badge count={5}>
-            <Button icon={<BellOutlined />} />
-          </Badge>
-          <Button icon={<SearchOutlined />} />
-        </div>
-
-        <div className="flex items-center gap-8">
           <Link to="/" className="text-white hover:text-gray-300">
             خانه
           </Link>
           <Link to="/search" className="text-white hover:text-gray-300">
-            جست و جو در اپلیکیشن
+            جست و جو در آلیاسیس
           </Link>
           <Link to="/services" className="text-white hover:text-gray-300">
-            خدمات اپلیکیشن
+            خدمات آلیاسیس
           </Link>
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="bg-white text-slate-800 px-3 py-1 rounded text-sm font-medium">
-            فارسی
-          </div>
-          <div className="text-xs text-white">
-            <div>English</div>
-          </div>
+          <Button icon={<SearchOutlined />} />
+          {/* <Badge count={5}> */}
+          <Button icon={<BellOutlined />} />
+          {/* </Badge> */}
+          <Button type="primary" icon={<PlusOutlined />} />
+          <Avatar className="bg-orange-600" shape="square">
+            A
+          </Avatar>
         </div>
       </Header>
 
       <AntLayout>
-        <Sider width={320} className="bg-slate-700" collapsible={false}>
+        <Sider
+          width={320}
+          className="bg-slate-700 menu-sider"
+          collapsible={false}
+        >
           <Menu
             mode="inline"
             selectedKeys={[location.pathname]}

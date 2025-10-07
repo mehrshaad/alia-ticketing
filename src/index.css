@@ -21,12 +21,28 @@ body {
   direction: rtl;
 }
 
+.main-header{
+  background: #2d4e71;
+}
+
 .ant-layout {
   direction: rtl;
 }
 
 .ant-menu {
   direction: rtl;
+  background: #2d4e71;
+}
+
+.ant-menu-item,
+.ant-menu-title-content,
+.ant-menu-submenu * {
+  color: #fff !important;
+  fill: #fff !important;
+}
+
+.menu-sider {
+  background: #2d4e71;
 }
 
 .ant-table {
@@ -63,11 +79,23 @@ body {
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #2d4e71;
+  padding: 20px clamp(16px, 4vw, 60px);
+}
+
+.dashboard-header {
+  padding: 60px 20px;
+  background: #405b76;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 45px 100%);
 }
 
 .card-shadow {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card {
+  background: #f9fafb;
+  border-radius: 0px;
 }
 
 .btn-primary {
