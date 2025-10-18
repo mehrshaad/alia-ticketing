@@ -21,7 +21,7 @@ body {
   direction: rtl;
 }
 
-.main-header{
+.main-header {
   background: #2d4e71;
 }
 
@@ -86,7 +86,11 @@ body {
 .dashboard-header {
   padding: 60px 20px;
   background: #405b76;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 45px 100%);
+  margin-bottom: -20px;
+}
+
+.clipped-bottom-left-corner {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%, 0 70%);
 }
 
 .card-shadow {

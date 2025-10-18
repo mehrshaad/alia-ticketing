@@ -42,7 +42,7 @@ const Dashboard = () => {
 
   return (
     <Space direction="vertical" size="large" className="w-full">
-      <div className="dashboard-header text-white">
+      <div className="dashboard-header clipped-bottom-left-corner text-white">
         <Title level={1} style={{ color: "#fff" }} className="pb-2">
           بخش سوپر ادمین
         </Title>
